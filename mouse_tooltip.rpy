@@ -47,3 +47,6 @@ init -1500 python:
 
             if self.redraw:
                 renpy.redraw(self, 0)
+
+            # Pass the event to our child
+            return self.value.event(ev, x, y, st)
