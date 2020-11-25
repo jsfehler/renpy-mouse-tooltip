@@ -11,8 +11,8 @@ init -1500 python:
             self.value = default
 
             self.padding = padding or {}
-            self.pad_x = padding.get('x', 0)
-            self.pad_y = padding.get('y', 0)
+            self.pad_x = self.padding.get('x', 0)
+            self.pad_y = self.padding.get('y', 0)
 
             self.x = 0
             self.y = 0
